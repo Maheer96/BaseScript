@@ -1,7 +1,8 @@
 ---
 title: About Us
 ---
-## Hello — thank you for stopping by! 
+ ## <ins>Hello — thank you for stopping by!</ins>
+
 Welcome to BaseScript, an open-source software development database founded by two aspiring engineers studying at [McMaster University](https://www.mcmaster.ca/)! Find more information about us by checking out our LinkedIn's:
 <div align="center"?> 
 	<h3>
