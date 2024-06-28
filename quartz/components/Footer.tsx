@@ -15,7 +15,7 @@ export default ((opts?: Options) => {
       <footer class={`${displayClass ?? ""}`}>
         <hr />
         <p>
-          <u>Founded By Passionate Students</u>
+          <u>Founded By Students</u>
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (

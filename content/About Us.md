@@ -1,7 +1,8 @@
 ---
 title: About Us
+enableToc: false
 ---
-## <ins>Hello — thank you for stopping by!</ins>
+## Hello — thank you for stopping by!
 Welcome to BaseScript, an open-source software development database founded by two aspiring engineers studying at [McMaster University](https://www.mcmaster.ca/)! Find more information about us by checking out our LinkedIn's:
 <div align="center"?> 
 	<h3>
@@ -12,7 +13,7 @@ Welcome to BaseScript, an open-source software development database founded by t
 </div>
 
 
-## <u>What is BaseScript?</u>
+## What is BaseScript?
 At BaseScript, we're dedicated to building a comprehensive programming language database that serves as a bridge between learning and teaching. As we grow, our goal is to become the go-to resource for programmers of all levels, from beginners to experienced developers.
 
 **What We Offer**

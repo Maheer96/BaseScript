@@ -7,6 +7,7 @@ import { JSX } from "preact"
 import style from "./styles/contentMeta.scss"
 
 import { formatDate } from "./Date";
+import { getDate } from "./Date";
 
 interface ContentMetaOptions {
   /**
@@ -17,7 +18,7 @@ interface ContentMetaOptions {
 }
 
 const defaultOptions: ContentMetaOptions = {
-  showReadingTime: true,
+  showReadingTime: false,
   showComma: true,
 }
 
@@ -45,7 +46,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
             </span>
           )
         }
-        segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
+  
       }
 
       // Display reading time if enabled
