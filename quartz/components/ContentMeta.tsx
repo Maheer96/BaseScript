@@ -1,10 +1,12 @@
-import { format as formatDateFn, formatISO } from "date-fns"
+import { format as fm, formatISO } from "date-fns"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import readingTime from "reading-time"
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
 import { JSX } from "preact"
 import style from "./styles/contentMeta.scss"
+
+import { formatDate } from "./Date";
 
 interface ContentMetaOptions {
   /**
@@ -20,8 +22,8 @@ const defaultOptions: ContentMetaOptions = {
 }
 
 const TimeAbbrv = ({ value }: { value : Date }) => (
-  <time dateTime={formatISO(value)} title={formatDateFn(value, "ccc w")}>
-    {formatDateFn(value, "MMM dd yyyy")}
+  <time dateTime={formatISO(value)} title={fm(value, "ccc w")}>
+    {fm(value, "MMM dd yyyy")}
   </time>
 )
 
