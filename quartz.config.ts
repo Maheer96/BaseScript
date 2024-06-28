@@ -22,23 +22,23 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Titillium Web", 
-        body: "Noto Sans Japanese",
+        header: "Istok Web", 
+        body: "Istok Web",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
           light: "#F5FCEE",
-          lightgray: "#000",
+          lightgray: "#CFC3B4",
           gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
+          darkgray: "#000",
           dark: "#2b2b2b",
           secondary: "#000",
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
-          light: "#150811",
+          light: "#332f2c",
           lightgray: "#fff",
           gray: "#646464",
           darkgray: "#d4d4d4",
