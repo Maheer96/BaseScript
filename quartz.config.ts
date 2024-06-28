@@ -16,19 +16,19 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "maheer96.github.io/BaseScript",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Averia Serif Libre", 
+        header: "Titillium Web", 
         body: "Noto Sans Japanese",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#FFE2D1",
+          light: "#F5FCEE",
           lightgray: "#000",
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
@@ -38,8 +38,8 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
-          light: "#2D3047",
-          lightgray: "#000",
+          light: "#150811",
+          lightgray: "#fff",
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
