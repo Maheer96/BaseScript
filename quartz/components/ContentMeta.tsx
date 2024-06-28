@@ -1,4 +1,4 @@
-import { formatDate, getDate } from "./Date"
+import { format as formatDateFn, formatISO } from "date-fns"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import readingTime from "reading-time"
 import { classNames } from "../util/lang"
@@ -19,6 +19,12 @@ const defaultOptions: ContentMetaOptions = {
   showComma: true,
 }
 
+const TimeAbbrv = ({ value }: { value : Date }) => (
+  <time dateTime={formatISO(value)} title={formatDateFn(value, "ccc w")}>
+    {formatDateFn(value, "MMM dd yyyy")}
+  </time>
+)
+
 export default ((opts?: Partial<ContentMetaOptions>) => {
   // Merge options with defaults
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
@@ -30,6 +36,13 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       const segments: (string | JSX.Element)[] = []
 
       if (fileData.dates) {
+        if (fileData.dates.created) {
+          segments.push(
+            <span>
+              📜Scripted on <TimeAbbrv value={fileData.dates.created}></TimeAbbrv>
+            </span>
+          )
+        }
         segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
       }
 
