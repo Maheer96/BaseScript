@@ -1,6 +1,6 @@
 ---
-title: Welcome to BaseScript!
+title: Welcome!
 tags: 
 cssclasses: []
----
-Home Page Under Construction
+
+👋🏽 Hello! Welcome to BaseScript, a small spot on the internet dedicated to 

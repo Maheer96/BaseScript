@@ -1,5 +1,5 @@
 ---
-title: About Us
+title: About
 enableToc: false
 enableContentMeta: false
 ---
@@ -23,7 +23,7 @@ At BaseScript, we're dedicated to building a comprehensive programming language 
 * <ins>Teaching Insights</ins>: Our content is crafted by passionate students who are eager to expand their programming knowledge. Because we are constantly learning and staying current with industry trends, we understand what skills and knowledge are most important. This ensures that we will provide resources that are always up-to-date and relevant to the current market
 
 ## What Does the Future Look Like?
-As we continue to grow, we plan to expand our database to include more programming languages and resources. Currently, our platform specializes in the fundamentals of JavaScript and its prominent frameworks. As our individual developers (just the two of us for now :p) expand their knowledge, our goal is to document each step of the way here on BaseScript.
+As we continue to grow, we plan to expand our database to include more programming languages and resources. Currently, our platform specializes in the fundamentals of JavaScript and its prominent frameworks. As our individual developers (just a few of us for now :p) expand their knowledge, our goal is to document each step of the way here on BaseScript.
 
 ## Why?
 You may ask, <i>"why create yet another programming database amongst all the others?"</i>. To put it simply, I felt that this was a strong opportunity to not only motivate myself, but others to learn and teach programming. I believe that the best way to learn <i>is</i> to teach, and so I thought, <i>"why not start something that involves both?"</i>. I hope that BaseScript can be a resource for you, and that you can find  something of value here. If you have any questions, comments, or concerns, please feel free to reach out to me (refer to the contact section below).
