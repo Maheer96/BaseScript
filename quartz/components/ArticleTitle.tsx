@@ -2,6 +2,14 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { classNames } from "../util/lang"
 
 const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+  // Extract the file name from the file path
+  const fileName = fileData.filePath ? fileData.filePath.split('/').pop() : null
+
+  // Check if the file name is 'index.md'
+  if (fileName === 'index.md') {
+    return null // Don't render a title for index.md
+  }
+
   const title = fileData.frontmatter?.title
   if (title) {
     return <h1 class={classNames(displayClass, "article-title")}>{title}</h1>
