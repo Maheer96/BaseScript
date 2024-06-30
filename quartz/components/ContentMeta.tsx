@@ -6,8 +6,8 @@ import { i18n } from "../i18n"
 import { JSX } from "preact"
 import style from "./styles/contentMeta.scss"
 
-import { formatDate } from "./Date";
-import { getDate } from "./Date";
+import { formatDate } from "./Date"
+import { getDate } from "./Date"
 
 interface ContentMetaOptions {
   /**
@@ -22,7 +22,7 @@ const defaultOptions: ContentMetaOptions = {
   showComma: true,
 }
 
-const TimeAbbrv = ({ value }: { value : Date }) => (
+const TimeAbbrv = ({ value }: { value: Date }) => (
   <time dateTime={formatISO(value)} title={fm(value, "ccc w")}>
     {fm(value, "MMM dd yyyy")}
   </time>
@@ -35,10 +35,13 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
 
+    // Extract the file name from the file path, ensure filePath is defined
+    const fileName = fileData.filePath ? fileData.filePath.split('/').pop() : null
+
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      if (fileData.dates) {
+      if (fileData.dates && fileName !== 'index.md') {
         if (fileData.dates.created) {
           segments.push(
             <span>
@@ -46,7 +49,6 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
             </span>
           )
         }
-  
       }
 
       // Display reading time if enabled

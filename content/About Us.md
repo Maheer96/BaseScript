@@ -22,6 +22,12 @@ At BaseScript, we're dedicated to building a comprehensive programming language 
 * <ins>Learning Resources</ins>: We provide tutorials, guides, and examples to help you understand difficult concepts with ease
 * <ins>Teaching Insights</ins>: Our content is crafted by passionate students who are eager to expand their programming knowledge. Because we are constantly learning and staying current with industry trends, we understand what skills and knowledge are most important. This ensures that we will provide resources that are always up-to-date and relevant to the current market
 
+## Format
+We will be using [Markdown](https://www.markdownguide.org/) to create our lessons. The majority of lessons found here will abide to the following  structure: 
+1) A brief introduction to the topic of interest 
+2) An in-depth explanation with examples
+3) A LeetCode/HackerRank Problem
+
 ## What Does the Future Look Like?
 As we continue to grow, we plan to expand our database to include more programming languages and resources. Currently, our platform specializes in the fundamentals of JavaScript and its prominent frameworks. As our individual developers (just a few of us for now :p) expand their knowledge, our goal is to document each step of the way here on BaseScript.
 
