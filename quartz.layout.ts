@@ -27,10 +27,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Graph(),
     Component.Darkmode(),
+    Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(Component.Explorer({
       title: "Learn Today!"
     })),
-    Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
     Component.Search(),
