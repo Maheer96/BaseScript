@@ -1,4 +1,4 @@
-> [!Question] An introduction?!
+> [!Question] An introduction?! Oh hell no
 > We think it's important to understand the context and functionality of a language before delving into it. This way, you're familiar with the reason the entire language was built, its use cases and practicality, as well as its historical and linguistic evolution! <br><br> In the case of JavaScript, there are quite a few concepts you should familiarize yourself with prior to taking a dive into it. Understanding the web-related theory underpinning JavaScript is advantageous when considering general front-end development. More on this will be discussed later.
 
 ## What is JavaScript?
@@ -55,30 +55,32 @@ The Document Object Model (DOM) is an **object** and **application programming i
 
 That was a lot of words. Let's look at an example (inspiration taken from [here](https://www.w3.org/TR/WD-DOM/introduction.html)).
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Example</title>
-</head>
-<body>
-    <table>
-        <tbody>
-            <tr>
-                <td>Oak</td>
-                <td>Sycamore</td>
-            </tr>
-            <tr>
-                <td>Elm</td>
-                <td>Willow</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
-```
+> [!example] DOM Example
+>
+> ```html
+> <!doctype html>
+> <html lang="en">
+>   <head>
+>     <meta charset="UTF-8" />
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+>     <title>Table Example</title>
+>   </head>
+>   <body>
+>     <table>
+>       <tbody>
+>         <tr>
+>           <td>Oak</td>
+>           <td>Sycamore</td>
+>         </tr>
+>         <tr>
+>           <td>Elm</td>
+>           <td>Willow</td>
+>         </tr>
+>       </tbody>
+>     </table>
+>   </body>
+> </html>
+> ```
 
 If you aren't familiar with HTML, this is a basic 2x2 table, where each row is represented by `<tr>` and each entry by `<td>`. When we look at the DOM structure model, we see how these objects are laid out.
 
@@ -108,4 +110,6 @@ For the most part, this course will be focused on _vanilla_ JavaScript, that is,
 
 I'm happy you made it here! That was a lot to cover for just an introduction to a programming language, but we think it's key to know the groundwork before diving into the learning, especially for a language like JavaScript. With that being said, now is a good time to start learning. Choose any of the lessons of your choice available in the dropdown menu under 'JavaScript.'
 
-`enjoy!`
+```
+# enjoy!
+```
