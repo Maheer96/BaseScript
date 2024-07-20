@@ -1,5 +1,5 @@
 > [!Question] An Introduction?
-> We think it's important to understand the context and functionality of a language before delving into it. This way, you're familiar with the reason the entire language was built, its use cases and practicality, as well as its historical and linguistic evolution! <br><br> In the case of JavaScript, there are quite a few concepts you should familiarize yourself with prior to taking a dive into it. Understanding the web-related theory underpinning JavaScript is advantageous when considering general front-end development. More on this will be discussed later.
+> We think it's important to understand the context and functionality of a language before delving into it. This way, you're familiar with the reason the entire language was built, its use cases and practicality, as well as its historical and linguistic evolution! <br><br> In the case of JavaScript, there are quite a few concepts you should familiarize yourself with prior to taking a dive into it. Understanding the web-related theory underpinning JavaScript is useful when considering general front-end development. More on this will be discussed later.
 
 ## What is JavaScript?
 
@@ -105,6 +105,17 @@ A framework is a structure that provides a foundation and pre-written code to he
 A superset, on the other hand, is an expansion of a base language, incorporating all of its components while adding additional features. For example, [Kotlin](https://kotlinlang.org/) is a superset of the popular language Java, and C++ is essentially a superset of the language C. In our case, we call TypeScript a superset of JavaScript because it adds syntax, specifically typing.
 
 For the most part, this course will be focused on _vanilla_ JavaScript, that is, the base language. Before taking a look into all of the modern frameworks and developer tools, it is critical to learn the fundamentals first.
+
+## Course Prerequisites
+
+With a wide variety of topics to cover within this course, having familiarity with a few of the following technologies will provide as a strong helping hand to fully becoming a JavaScript developer!
+
+For starters, we recommend you have played around with:
+
+1. A code editor (i.e. VSCode)
+2. Basic HTML and CSS
+3. Command lines & navigating the file system
+4. Git and GitHub (if you hope to move further and publish your works)
 
 ## Conclusion
 
