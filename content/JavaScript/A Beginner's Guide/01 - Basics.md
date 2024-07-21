@@ -16,15 +16,21 @@ Let's get started with the timeless exemplar for introductory programming — a 
    > **HTML**
    >
    > ```html
-   > <script src="scripts/script.js"></script>
+   > <script src="scripts/script.js" defer></script>
    > ```
 
-   If you read [[An-Introduction#how-are-they-interconnected|this]] portion of our introduction, you might recognize this step being similar to linking the CSS file to your `index.html`
+   If you read [[An-Introduction#how-are-they-interconnected|this]] portion of our introduction, you might recognize this step being similar to linking the CSS file to your `index.html`. Next, ensure to include an `<h1>` component within your body so we can manipulate it in the next step.
 
 4. In your `script.js` file enter the following code
+
    > **JS**
    >
    > ```javascript
    > const HelloWorld = document.querySelector("h1")
    > HelloWorld.textContent = "Hello World"
    > ```
+
+5. Load the `index.html` file into your browser, where you should hopefully see a big "Hello World!" heading on your screen.
+   > <img src="./HelloWorld.png"></img>
+
+What we have just done is used the _querySelector()_ method, which returns the **first** element within the document (index.html) that matches the specified selector. In this case, we wanted to search for an `h1` object, to which we manipulated it's `textContent` to be set to "Hello World."
