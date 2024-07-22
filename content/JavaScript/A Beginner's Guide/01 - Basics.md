@@ -63,7 +63,7 @@ Before understanding why there are different ways to encompass a value into a va
 
 #### Global Scope
 
-Any variable defined outside of a function or block is in a global scope, meaning it can be accessed from any point in the program.
+Any variable defined outside of a function or block is in the global scope, meaning it can be accessed from any point in the program. Note that you may not understand some of the concepts here, but you should understand the core of the concepts.
 
 > [!example2] Global Scope Example
 >
@@ -77,3 +77,37 @@ Any variable defined outside of a function or block is in a global scope, meanin
 > displayGlobalVar() // Output: I'm global!
 > console.log(globalVar) // Accessible, Output: I'm global!
 > ```
+
+#### Function Scope
+
+Variables set inside of a function are limited to the function scope, meaning they cannot be accessed from the outside.
+
+> [!example] Function Scope Example
+>
+> ```javascript
+> function greet() {
+>   let message = "Hello from function scope!"
+>   console.log(message) // Accessible
+> }
+> greet() // Output: Hello from function scope!
+> console.log(message) // Uncaught ReferenceError: message is not defined
+> ```
+
+#### Block Scope
+
+Variables set using `let` and `const` inside of a block (inside '{}') are in the block scope without the ability to be accessed from outside.
+
+> [!example2] Block Scope Example
+>
+> ```javascript
+> {
+>   let blockVar = "I'm block scoped!"
+>   console.log(blockVar) // Accessible, Output: I'm block scoped!
+> }
+>
+> console.log(blockVar) // Uncaught ReferenceError: blockVar is not defined
+> ```
+
+### Let, Var, & Const
+
+The three most common ways to declare a variable in JavaScript are to use `var`, `let`, and `const`.

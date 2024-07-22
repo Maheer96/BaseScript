@@ -1,11 +1,11 @@
 > [!Question] An Introduction?
-> We think it's important to understand the context and functionality of a language before delving into it. This way, you're familiar with the reason the entire language was built, its use cases and practicality, as well as its historical and linguistic evolution! <br><br> In the case of JavaScript, there are quite a few concepts you should familiarize yourself with prior to taking a dive into it. Understanding the web-related theory underpinning JavaScript is useful when considering general front-end development. More on this will be discussed later.
+> We think it's important to understand the context and functionality of a language before delving into it. This way, you're familiar with the reason the entire language was built, its use cases and practicality, as well as its historical and linguistic evolution! <br><br> In the case of JavaScript, there are quite a few concepts you should familiarize yourself with before diving into it. Understanding the web-related theory underpinning JavaScript is useful for general front-end development.
 
 ## What is JavaScript?
 
 [**JavaScript**](https://www.javascript.com/) is a [high-level](https://en.wikipedia.org/wiki/High-level_programming_language#:~:text=Examples%20of%20high%2Dlevel%20programming,low%2Dlevel%20are%20inherently%20relative.) scripting/programming language used to integrate complex features on websites. Among a few other languages you may recognize — Python, SQL, C#, and JavaScript are some of the most utilized programming languages in the world. In fact, JavaScript _<u>is</u>_ the most utilized language globally! Now, why is that the case? What makes JavaScript so special?
 
-Created for the first [browser war](https://en.wikipedia.org/wiki/Browser_wars) in the mid-1990s, JavaScript was a programming language dedicated to driving the now-discontinued [Netscape Navigator](https://en.wikipedia.org/wiki/Netscape_Navigator) web browser ahead in the race against its rival, Microsoft's Internet Explorer.
+Created for the first [browser war](https://en.wikipedia.org/wiki/Browser_wars) in the mid-1990s, JavaScript was a programming language created to drive the now-discontinued [Netscape Navigator](https://en.wikipedia.org/wiki/Netscape_Navigator) web browser ahead in the race against its rival, Microsoft's Internet Explorer.
 
 > [!abstract] Did you know?  
 > JavaScript was originally called LiveScript, but was renamed to JavaScript to capitalize on the popularity of Java. The initial prototype of JavaScript, _Mocha_, was developed by Brendan Eich in just ten days!
@@ -16,7 +16,7 @@ You might be familiar with HTML and CSS, two languages that provide the structur
 
 Where does JavaScript tie into all of this? Well, JavaScript adds interactivity and dynamic behavior to your web pages. It allows you to create engaging user experiences by enabling features like form validations, interactive maps, dynamic content updates, animations, and much more. While HTML and CSS make your webpage look good and structure it well, JavaScript brings it to life, making it responsive and interactive.
 
-Perhaps this analogy I made to this random game I found online that might make sense to you.
+Perhaps this analogy I made with this random game I found online that might make sense to you.
 
 > <img src="./frontend.png"></img>
 
@@ -51,7 +51,7 @@ Within the main HTML file you create (commonly called index.html), the CSS styli
 
 ### The Document Object Model
 
-The Document Object Model (DOM) is an **object** and **application programming interface** (more on these later!) that embodies the page you see on a webpage. Through this model, anything that was built inside of an HTML file can be modified, deleted, or added to. Whenever the web browser loads an HTML document, the DOM is created. All elements that were employed in the HTML document are formatted into a grove-like orientation (formally called a _structure model_). JavaScript is able to access the DOM and add dynamic modifications the the webpage.
+The Document Object Model (DOM) is an **object** and **application programming interface** (more on these later!) that embodies the page you see on a webpage. Through this model, anything built inside an HTML file can be modified, deleted, or added to. Whenever the web browser loads an HTML document, the DOM is created. All elements that were employed in the HTML document are formatted into a grove-like orientation (formally called a _structure model_). JavaScript can access the DOM and add dynamic modifications the the webpage.
 
 That was a lot of words. Let's look at an example (inspiration taken from [here](https://www.w3.org/TR/WD-DOM/introduction.html)).
 
@@ -82,7 +82,7 @@ That was a lot of words. Let's look at an example (inspiration taken from [here]
 > </html>
 > ```
 
-If you aren't familiar with HTML, this is a basic 2x2 table, where each row is represented by `<tr>` and each entry by `<td>`. When we look at the DOM structure model, we see how these objects are laid out.
+If you aren't familiar with HTML, this is a basic 2x2 table where each row is represented by `<tr>` and each entry by `<td>`. When we look at the DOM structure model, we see how these objects are laid out.
 
 > <img src="./DOM.png"></img>
 
@@ -92,9 +92,9 @@ Every component in that image is treated like an "object" in JavaScript, which c
 
 The distinction in the form of programming that we are doing when we incorporate JavaScript into a simple HTML and CSS code is a transition from what we call _static content_ to _dynamic content_.
 
-- Static Content: When we use only HTML and CSS, the content of the web page is static. This means that the content and style are fixed and do not change in response to user actions or other inputs. The page looks the same every time it is loaded.
+- Static Content: When we use only HTML and CSS, the content of the webpage is static. This means that the content and style are fixed and do not change in response to user actions or other inputs. The page looks the same every time it is loaded.
 
-- Dynamic Content: When we add JavaScript, we enable dynamic content. JavaScript allows the web page to interact with the user, respond to events, and update the content dynamically without needing to reload the entire page. This transition makes the web experience more interactive and engaging.
+- Dynamic Content: When we add JavaScript, we enable dynamic content. JavaScript allows the webpage to interact with the user, respond to events, and update the content dynamically without needing to reload the entire page. This transition makes the web experience more interactive and engaging for users.
 
 ## Frameworks and Supersets
 
@@ -108,7 +108,7 @@ For the most part, this course will be focused on _vanilla_ JavaScript, that is,
 
 ## Course Prerequisites
 
-With a wide variety of topics to cover within this course, having familiarity with a few of the following technologies will provide as a strong helping hand to fully becoming a JavaScript developer!
+With a wide variety of topics to cover in this course, familiarity with the following technologies will help you become a JavaScript developer!
 
 For starters, we recommend you have played around with:
 
