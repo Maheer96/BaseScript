@@ -52,3 +52,28 @@ Similar to how you can write inline CSS in an HTML file under the `<style>` tag,
 >   console.log("Hello, world!") // Outputs "Hello World" in the console
 > </script>
 > ```
+
+## Variables
+
+A basic facet of syntax within programming languages is variable declaration. A variable is a containers that holds specific information we set it to. In JavaScript, there are a few ways to set a variable, contrary to other common languages like Python, where declaration is rather simple.
+
+### Scope
+
+Before understanding why there are different ways to encompass a value into a variable, it is important to understand the _scope_ of a variable. In programming, you often work within functions and blocks, which can limit the scope of their contents to that specific part. This is where different forms of variable definition come into play. Let's explore the different types of scope.
+
+#### Global Scope
+
+Any variable defined outside of a function or block is in a global scope, meaning it can be accessed from any point in the program.
+
+> [!example2] Global Scope Example
+>
+> ```javascript
+> let globalVar = "I'm global!"
+>
+> function displayGlobalVar() {
+>   console.log(globalVar) // Accessible
+> }
+>
+> displayGlobalVar() // Output: I'm global!
+> console.log(globalVar) // Accessible, Output: I'm global!
+> ```

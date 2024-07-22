@@ -107,6 +107,13 @@
     --callout-icon: var(--callout-icon-example);
   }
 
+  &[data-callout="example2"] {
+    --color: #536b78;
+    --border: #7a43b544;
+    --bg: #cfe5f2ba; /* Light blue background */
+    --callout-icon: var(--callout-icon-example);
+  }
+
   &[data-callout="quote"] {
     --color: var(--secondary);
     --border: var(--lightgray);
