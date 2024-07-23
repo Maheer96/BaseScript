@@ -119,7 +119,7 @@ For starters, we recommend you have played around with:
 
 ## Conclusion
 
-I'm happy you made it here! That was a lot to cover for just an introduction to a programming language, but we think it's key to know the groundwork before diving into the learning, especially for a language like JavaScript. With that being said, now is a good time to start learning. Choose any of the lessons of your choice available in the dropdown menu under 'JavaScript.'
+That was a lot to cover for just an introduction to a programming language, but we think it's key to know the groundwork before diving into the learning, especially for a language like JavaScript. With that being said, now is a good time to start learning. Choose any of the lessons of your choice available in the dropdown menu under 'JavaScript.'
 
 ```
 # enjoy!

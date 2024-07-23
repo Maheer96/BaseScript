@@ -33,8 +33,8 @@ Let's get started with the timeless exemplar for introductory programming — a 
    > **JavaScript**
    >
    > ```javascript
-   > const HelloWorld = document.querySelector("h1")
-   > HelloWorld.textContent = "Hello World"
+   > const HelloWorld = document.querySelector("h1");
+   > HelloWorld.textContent = "Hello World";
    > ```
 
 5. Load the `index.html` file into your browser, where you should hopefully see a big "Hello World!" heading on your screen.
@@ -49,7 +49,7 @@ Similar to how you can write inline CSS in an HTML file under the `<style>` tag,
 >
 > ```html
 > <script>
->   console.log("Hello, world!") // Outputs "Hello World" in the console
+>   console.log("Hello, world!"); // Outputs "Hello World" in the console
 > </script>
 > ```
 
@@ -68,14 +68,14 @@ Any variable defined outside of a function or block is in the global scope, mean
 > [!example2] Global Scope Example
 >
 > ```javascript
-> let globalVar = "I'm global!"
+> let globalVar = "I'm global!";
 >
 > function displayGlobalVar() {
->   console.log(globalVar) // Accessible
+>   console.log(globalVar); // Accessible
 > }
 >
-> displayGlobalVar() // Output: I'm global!
-> console.log(globalVar) // Accessible, Output: I'm global!
+> displayGlobalVar(); // Output: I'm global!
+> console.log(globalVar); // Accessible, Output: I'm global!
 > ```
 
 #### Function Scope
@@ -86,11 +86,11 @@ Variables set inside of a function are limited to the function scope, meaning th
 >
 > ```javascript
 > function greet() {
->   let message = "Hello from function scope!"
->   console.log(message) // Accessible
+>   let message = "Hello from function scope!";
+>   console.log(message); // Accessible
 > }
-> greet() // Output: Hello from function scope!
-> console.log(message) // Uncaught ReferenceError: message is not defined
+> greet(); // Output: Hello from function scope!
+> console.log(message); // Uncaught ReferenceError: message is not defined
 > ```
 
 #### Block Scope
@@ -101,13 +101,31 @@ Variables set using `let` and `const` inside of a block (inside '{}') are in the
 >
 > ```javascript
 > {
->   let blockVar = "I'm block scoped!"
->   console.log(blockVar) // Accessible, Output: I'm block scoped!
+>   let blockVar = "I'm block scoped!";
+>   console.log(blockVar); // Accessible, Output: I'm block scoped!
 > }
 >
-> console.log(blockVar) // Uncaught ReferenceError: blockVar is not defined
+> console.log(blockVar); // Uncaught ReferenceError: blockVar is not defined
 > ```
 
-### Let, Var, & Const
+### Var, Let, & Const
 
-The three most common ways to declare a variable in JavaScript are to use `var`, `let`, and `const`.
+There are three common ways to declare a variable in JavaScript, these are the `var`, `let`, and `const` keywords, the former of which has become the outdated and error-prone of the bunch. `var` in JavaScript was the only way to declare variables until ECMAScript 2015, as such, it's newer counterparts serve a stronger purpose, making `var` difficult to use. Here is a basic example on how it might be used.
+
+> [!example] Using `var`
+>
+> ```javascript
+> var x = 5;
+> console.log(x); // Output: 5
+> ```
+
+The drawback to using `var` has to do with it's scoping issues. `var` is strange in that it is function-scope, yet not block-scoped, leading to unexpected behaviours that create errors that are difficult to track. Since it does not respect block boundaries (including conditional statements and loops), there are often unintended side-effects to its use. Another issue associated with `var` is **hoisting**. Hoisting is a unique quirk of JavaScript where variable and function declarations are moved to the top of their containing scope during compilation. Take the following for an example.
+
+> [!example2] Hoisting
+>
+> ```javascript
+> console.log(dummyVar); // Output: undefined
+> dummyVar = 15;
+> ```
+
+It might feel strange that this program outputs `undefined` rather than a `ReferenceError`, despite the variable being declared later in the code. As mentioned, JavaScript takes any declaration of variables and functions and hoists them within the code, so, the compiler interprets the _declaration_ first. In other words, you can imagine that before the first line of code JavaScript sees: `var dummyVar`, an empty declaration with no value.
