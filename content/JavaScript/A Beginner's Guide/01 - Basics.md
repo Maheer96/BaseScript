@@ -53,6 +53,73 @@ Similar to how you can write inline CSS in an HTML file under the `<style>` tag,
 > </script>
 > ```
 
+## Comments
+
+Comments in programming provide a sense of maintenance and readability for users. In JavaScript, there are two ways of commenting: single-line commenting and multi-line commenting.
+
+1. Single-Line Comments
+   Single-line comments are typically used to comment out short explanations or notes. They are denoted by `//` and extend to the end of the line.
+
+   > [!example2] Single-Line Comments
+   >
+   > ```javascript
+   > // This is a single-line comment
+   > let x = 3; // This is also a single-line comment
+   > ```
+
+2. Multi-Line Comments
+   Multi-line comments are often used for longer explanations that span several lines. They are denoted by `/*...*/`.
+
+   > [!example] Multi-Line Comments
+   >
+   > ```javascript
+   > /* This is a multi-line comment.
+   >    It can span multiple lines.
+   >    Useful for more detailed explanations. */
+   > let y = 10;
+   > ```
+
+### Use Cases
+
+Comments can explain what a certain section of code does if it might be difficult to interpret. Comments like these are almost always used in larger settings for seamless communication.
+
+> [!example2] Explanatory Comments
+>
+> ```javascript
+> // Calculate the factorial of a number
+> function factorial(n) {
+>   if (n === 0) {
+>     return 1; // Base case: factorial of 0 is 1
+>   }
+>   return n * factorial(n - 1); // Recursive case
+> }
+> ```
+
+Another important use case of comments is disabling code for testing purposes. This is often incredibly useful for short-term and brief test cases that involve low effort.
+
+> [!example] Disabling Code
+>
+> ```javascript
+> // Function to add two numbers
+> function add(a, b) {
+>   // return a + b + 1; // Original code causing an issue
+>   return a + b; // Corrected code
+> }
+> // Test the function
+> console.log(add(2, 3)); // Output should be 5, was previously 6
+> ```
+
+### Practices
+
+Despite commenting being an _essential_ skill to your programming skillset, try to abide by the following best practices.
+
+- Remain Concise
+  - Comments should be **easy** to understand, refrain from writing comments that are overly verbose
+- Keep Comments Up-to-Date
+  - Ensure to update comments if the related area of code has been updated or affected. Outdated comments are quite common and result in confusion
+- Use Comments Sparingly
+  - While comments are great to put in effect, avoid using them overbearingly. Code is often self-explanatory and the aim for comments is to act as a supplement, not to explain every line
+
 ## Variables
 
 A basic facet of syntax within programming languages is variable declaration. A variable is a containers that holds specific information we set it to. In JavaScript, there are a few ways to set a variable, contrary to other common languages like Python, where declaration is rather simple.
@@ -63,7 +130,9 @@ Before understanding why there are different ways to encompass a value into a va
 
 #### Global Scope
 
-Any variable defined outside of a function or block is in the global scope, meaning it can be accessed from any point in the program. Note that you may not understand some of the concepts here, but you should understand the core of the concepts.
+Any variable defined outside of a function or block is in the global scope, meaning it can be accessed from any point in the program.
+
+**Note:** You may not understand some of the concepts here, but you should understand the core of what is being taught.
 
 > [!example2] Global Scope Example
 >
@@ -71,7 +140,7 @@ Any variable defined outside of a function or block is in the global scope, mean
 > let globalVar = "I'm global!";
 >
 > function displayGlobalVar() {
->   console.log(globalVar); // Accessible
+>   console.log(globalVar); // Accessible and within a function
 > }
 >
 > displayGlobalVar(); // Output: I'm global!
@@ -86,7 +155,7 @@ Variables set inside of a function are limited to the function scope, meaning th
 >
 > ```javascript
 > function greet() {
->   let message = "Hello from function scope!";
+>   let message = "Hello from function scope!"; // Function-defined variable
 >   console.log(message); // Accessible
 > }
 > greet(); // Output: Hello from function scope!
@@ -101,7 +170,7 @@ Variables set using `let` and `const` inside of a block (inside '{}') are in the
 >
 > ```javascript
 > {
->   let blockVar = "I'm block scoped!";
+>   let blockVar = "I'm block scoped!"; // Block-defined variable
 >   console.log(blockVar); // Accessible, Output: I'm block scoped!
 > }
 >
@@ -110,7 +179,11 @@ Variables set using `let` and `const` inside of a block (inside '{}') are in the
 
 ### Var, Let, & Const
 
-There are three common ways to declare a variable in JavaScript, these are the `var`, `let`, and `const` keywords, the former of which has become the outdated and error-prone of the bunch. `var` in JavaScript was the only way to declare variables until ECMAScript 2015, as such, it's newer counterparts serve a stronger purpose, making `var` difficult to use. Here is a basic example on how it might be used.
+There are three common ways to declare a variable in JavaScript, these are the `var`, `let`, and `const` keywords, the former of which has become the outdated and error-prone of the bunch.
+
+#### Var
+
+`var` in JavaScript was the only way to declare variables until ECMAScript 2015, as such, it's newer counterparts serve a stronger purpose, rendering `var` less useful. Here is a basic example on how it might be used.
 
 > [!example] Using `var`
 >
@@ -119,7 +192,7 @@ There are three common ways to declare a variable in JavaScript, these are the `
 > console.log(x); // Output: 5
 > ```
 
-The drawback to using `var` has to do with it's scoping issues. `var` is strange in that it is function-scope, yet not block-scoped, leading to unexpected behaviours that create errors that are difficult to track. Since it does not respect block boundaries (including conditional statements and loops), there are often unintended side-effects to its use. Another issue associated with `var` is **hoisting**. Hoisting is a unique quirk of JavaScript where variable and function declarations are moved to the top of their containing scope during compilation. Take the following for an example.
+The drawback to using `var` has to do with it's scoping issues. `var` is strange in that it is function-scoped, yet not block-scoped, leading to unexpected behaviours that create errors that are difficult to track. Since it does not respect block boundaries (including conditional statements and loops), there are often unintended side-effects to its use. Another issue associated with `var` is **hoisting**. Hoisting is a unique quirk of JavaScript where variable and function declarations are moved to the top of their containing scope during compilation. Take the following for an example.
 
 > [!example2] Hoisting
 >
@@ -128,4 +201,68 @@ The drawback to using `var` has to do with it's scoping issues. `var` is strange
 > dummyVar = 15;
 > ```
 
-It might feel strange that this program outputs `undefined` rather than a `ReferenceError`, despite the variable being declared later in the code. As mentioned, JavaScript takes any declaration of variables and functions and hoists them within the code, so, the compiler interprets the _declaration_ first. In other words, you can imagine that before the first line of code JavaScript sees: `var dummyVar`, an empty declaration with no value.
+It might feel strange that this program outputs `undefined` rather than an error (specifically a `ReferenceError`), despite the variable being declared later in the code. As mentioned, JavaScript takes any declaration of variables and functions and hoists them within the code, so, the compiler interprets the _declaration_ first. In other words, you can imagine that before the first line of code JavaScript sees: `var dummyVar`, an empty declaration with no value.
+
+Variables declared using `var` also have the ability to be **re-declared**.
+
+> [!example] Re-Declaration
+>
+> ```javascript
+> var count = 10;
+> var count = 20; // Allowed
+> count = 30; // Allowed
+> ```
+
+#### Let
+
+One of the more modern ways to work with variables is to use `let`, a block-scoped declaration method introduced in recent updates. Unlike `var`, `let` is _only_ accessible within the block the variable is declared in.
+
+> [!example2] Block-Scoped Nature
+>
+> ```javascript
+> if (true) {
+>   let x = 20;
+> }
+> console.log(x); // Output: ReferenceError: x is not defined
+> ```
+
+##### Temporal Dead Zone
+
+In terms of hoisting, `let` (and `const`) differs from `var` in that variables _are_ hoisted, but not _initialized_. These variables remain in a "temporal dead zone" (TDZ) from the beginning of the block until the declaration. Attempting to access the variable before it's declaration causes a `ReferenceError`.
+
+> [!example] Temporal Dead Zone
+>
+> ```javascript
+> {
+>   console.log(x); // Output: ReferenceError: Cannot access 'x' before initialization
+>   let x = 10;
+>   console.log(x); // Output: 10
+> }
+> ```
+
+The term "temporal" is in relation to time. In the context of TDZ, this refers to the order of operations while the code executes. The whole reason it exists is _because_ JavaScript processes code in a time-related sequence.
+
+#### Const
+
+As you might expect, the `const` keyword in JavaScript declares variables that remain **constant**. However, this does not mean the value itself is immutable (unchangeable), but rather that the _reference_ to the value cannot be reassigned.
+
+> [!example2]
+>
+> ```javascript
+> const pi = 3.1415;
+> console.log(pi); // Output: 3.1415
+>
+> // Attempting to reassign a const variable will result in an error
+> pi = 3.14; // TypeError: invalid assignment to const `pi`
+> ```
+
+Like `let`, `const` is block-scoped and cannot be redeclared, however, it cannot be updated like the former. It also shares similarity in that it can be hoisted but not initialized, resulting in [[01---Basics#temporal-dead-zone|TDZ]].
+
+With all of that information, here is a table summarizing the differences and similarities between these three variable-declaring keywords.
+
+| Feature       | `var`             | `let`     | `const`   |
+| ------------- | ----------------- | --------- | --------- |
+| Scope         | Function          | Block     | Block     |
+| Hoisting      | Yes (initialized) | Yes (TDZ) | Yes (TDZ) |
+| Reassignment  | Yes               | Yes       | No        |
+| Redeclaration | Yes               | No        | No        |
