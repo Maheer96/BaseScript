@@ -43,7 +43,7 @@ What we have just done is used the _querySelector()_ method, which returns the *
 
 ## Inline JavaScript
 
-Similar to how you can write inline CSS in an HTML file under the `<style>` tag, you can write inline JavaScript under the `<script>` tag introduced in the section above. Let's introduce a new, commonly used object — `console`. Much like the browser console we spoke about before, the `console` object provides access to the debugger available in our browsers. Various methods can be concatenated to this object to mimick procedures that can be done in the regular web console. Take, for example, displaying a message via the `log()` method.
+Similar to how you can write inline CSS in an HTML file under the `<style>` tag, you can write inline JavaScript under the `<script>` tag introduced in the section above. Let's introduce a new, commonly used object — `console`. Much like the browser console we spoke about before, the `console` object provides access to the debugger available in our browsers. Several methods can be concatenated to this object to mimick procedures that can be executed in the regular web console. Take, for example, displaying a message via the `log()` method.
 
 > [!example] Logging to the Console Through HTML
 >
@@ -266,5 +266,3 @@ With all of that information, here is a table summarizing the differences and si
 | Hoisting      | Yes (initialized) | Yes (TDZ) | Yes (TDZ) |
 | Reassignment  | Yes               | Yes       | No        |
 | Redeclaration | Yes               | No        | No        |
-
-## Exercise
