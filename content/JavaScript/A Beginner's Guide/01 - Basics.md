@@ -1,5 +1,5 @@
 ---
-title: The Basics
+title: 01 - Basics
 ---
 
 ## Browser Console
