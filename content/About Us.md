@@ -31,8 +31,8 @@ At BaseScript, we're dedicated to building a comprehensive programming language 
 We will be using [Markdown](https://www.markdownguide.org/) to create our lessons. The majority of lessons found here will abide to the following structure:
 
 1. A brief introduction to the topic of interest
-2. An in-depth explanation with examples
-3. A LeetCode/HackerRank Problem
+2. An in-depth explanation of relating topics with examples
+3. An exercise (may vary for introductory lessons)
 
 ## What Does the Future Look Like?
 

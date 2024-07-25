@@ -1,5 +1,5 @@
-import { QuartzConfig } from "./quartz/cfg"
-import * as Plugin from "./quartz/plugins"
+import { QuartzConfig } from "./quartz/cfg";
+import * as Plugin from "./quartz/plugins";
 
 /**
  * Quartz 4.0 Configuration
@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "basescript!",
+    pageTitle: "BaseScript💠",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Istok Web", 
+        header: "Istok Web",
         body: "Istok Web",
         code: "IBM Plex Mono",
       },
@@ -86,6 +86,6 @@ const config: QuartzConfig = {
       Plugin.NotFoundPage(),
     ],
   },
-}
+};
 
-export default config
+export default config;
