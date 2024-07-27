@@ -4,9 +4,9 @@ title: 02 - Operators
 
 Operators are special symbols in programming that perform operations on operands (values and variables). They are essential for manipulating data and making logical decisions in your code. There are a few categories that operators can be divided into:
 
-- [[02---Operators#arithmetic-operators|Arithmetic]]
-- [[02---Operators#assignment-operators|Assignment]]
-- [[02---Operators#comparison-operators|Comparison]]
+- Arithmetic
+- Assignment
+- Comparison
 - Logical
 
 In JavaScript, understanding operations is **fundamental** for writing effective code.
@@ -289,3 +289,140 @@ Explicit type coercion is a manual process where you explicitly convert one data
 > ```
 
 ## Logical Operators
+
+Similar to comparison operators, logical operators are used to perform logical actions on values to return a boolean value. There are several logical operators available for use in JavaScript, all of which can be seen below.
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Example</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&&</td>
+      <td>Logical AND</td>
+      <td>Returns `true` if both operands are true</td>
+      <td>true && false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>||</td>
+      <td>Logical OR</td>
+      <td>Returns `true` if at least one operand is true</td>
+      <td>true || false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>Logical NOT</td>
+      <td>Inverts the value of the operand</td>
+      <td>!true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>?:</td>
+      <td>Ternary Operator</td>
+      <td>Shorthand for `if-else` statement</td>
+      <td>(5 > 4) ? "Yes" : "No"</td>
+      <td>"Yes"</td>
+    </tr>
+    <tr>
+      <td>??</td>
+      <td>Logical Nullish Coalescing</td>
+      <td>Returns right operand if left is `null` or `undefined`</td>
+      <td>null ?? 'default'</td>
+      <td>'default'</td>
+    </tr>
+  </tbody>
+</table>
+
+> [!note] Truth Tables
+> Understanding the truth table is critical toward making sense of expressions containing boolean values.
+>
+> When working with the logical AND operator, the value `true` is only returned if both values are `true`.
+>
+> | A     | B     | A && B |
+> | ----- | ----- | ------ |
+> | true  | true  | true   |
+> | true  | false | false  |
+> | false | true  | false  |
+> | false | false | false  |
+>
+> Whereas, when working with the logical OR operator, the value `true` is returned if _either_ value is `true`.
+>
+> <table>
+>   <thead>
+>     <tr>
+>       <th>A</th>
+>       <th>B</th>
+>       <th>A || B</th>
+>     </tr>
+>   </thead>
+>   <tbody>
+>     <tr>
+>       <td>true</td>
+>       <td>true</td>
+>       <td>true</td>
+>     </tr>
+>     <tr>
+>       <td>true</td>
+>       <td>false</td>
+>       <td>true</td>
+>     </tr>
+>     <tr>
+>       <td>false</td>
+>       <td>true</td>
+>       <td>true</td>
+>     </tr>
+>     <tr>
+>       <td>false</td>
+>       <td>false</td>
+>       <td>false</td>
+>     </tr>
+>   </tbody>
+> </table>
+
+When you begin using these operators in your code, you may notice the prominence of the first **four**, this is because these are the most powerful and commonly used. For further examples, see below.
+
+> [!example2] Common Logical Operators
+>
+> ```javascript
+> let x = true;
+> let y = false;
+>
+> console.log(x && y); // false
+> console.log(x || y); // true
+> console.log(!x); // false
+> ```
+
+> [!example] Ternary Operator
+>
+> ```javascript
+> let x = 10;
+> let y = 5;
+>
+> result = x > y ? "Yes" : "No";
+> console.log(result); // Yes
+> ```
+
+The strangest operator of the bunch is certainly the **nullish coalescing operator**. This operation has a strict definition and returns a value based on whether the first argument is **nullish** (i.e. `null` or `undefined`). This operator compares two values, the first value is returned if it is **not** nullish, otherwise, the second value is returned. For clarification, see the following example.
+
+> [!example2] Nullish Coalescing Operator
+>
+> ```javascript
+> let age = null; // The 'first' value
+> let text = "second option"; // The 'second' value
+> let result = age ?? text; // first value is nullish, therefore will not be returned
+> console.log(result); // second option
+> ```
+
+#### Conclusion
+
+In this lesson, we explored four fundamental types of operators in JavaScript: arithmetic, assignment, comparison, and logical operators. These operators are essential tools for manipulating data and controlling the flow of your programs.
+
+By mastering these operators, you will be equipped with the foundational tools needed to write more efficient, readable, and maintainable JavaScript code. As you continue to practice and apply these concepts, you'll find that they are integral to solving a wide range of programming challenges.
