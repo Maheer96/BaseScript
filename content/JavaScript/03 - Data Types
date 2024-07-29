@@ -1,5 +1,0 @@
----
-title: 03 - Data Types
----
-
-Data types are an essential facet of programming that builds the groundwork for how data is manipulated and handled. Each data type is unique in its characteristics and use cases, and knowing the distinction between these types will help you produce more robust code. JavaScript is a _dynamically_ typed language, meaning that [[01---Basics#variables|variables]] can
