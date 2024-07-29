@@ -246,7 +246,7 @@ The term "temporal" is in relation to time. In the context of TDZ, this refers t
 
 As you might expect, the `const` keyword in JavaScript declares variables that remain **constant**. However, this does not mean the value itself is immutable (unchangeable), but rather that the _reference_ to the value cannot be reassigned.
 
-> [!example2]
+> [!example2] Const
 >
 > ```javascript
 > const pi = 3.1415;
