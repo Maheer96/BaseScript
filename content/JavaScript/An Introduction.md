@@ -1,3 +1,7 @@
+---
+title: 00 - Introduction
+---
+
 > [!Question] An Introduction?
 > We think it's important to understand the context and functionality of a language before delving into it. This way, you're familiar with the reason the entire language was built, its use cases and practicality, as well as its historical and linguistic evolution! <br><br> In the case of JavaScript, there are quite a few concepts you should familiarize yourself with before diving into it. Understanding the web-related theory underpinning JavaScript is useful for general front-end development.
 
