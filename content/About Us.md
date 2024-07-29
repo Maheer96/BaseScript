@@ -36,7 +36,7 @@ We will be using [Markdown](https://www.markdownguide.org/) to create our lesson
 
 ## What Does the Future Look Like?
 
-As we continue to grow, we plan to expand our database to include more programming languages and resources. Currently, our platform specializes in the fundamentals of JavaScript and its prominent frameworks. As our individual developers (just a few of us for now :p) expand their knowledge, our goal is to document each step of the way here on BaseScript.
+As we continue to grow, we plan to expand our database to include more programming languages and resources. Currently, our platform specializes in the fundamentals of JavaScript and C. As our individual developers (just a few of us for now :p) expand their knowledge, our goal is to document each step of the way here on BaseScript.
 
 ## Why?
 
