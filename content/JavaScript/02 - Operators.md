@@ -161,7 +161,7 @@ Here are a couple of examples to ensure you get the gist of it.
 > console.log(x); // 8
 > ```
 
-While the first set of assignment operations are relatively straightforward, you might find difficulty in understanding the latter half of the table. In the next two sections, we'll clarify the significance behind **shift** and **bitwise** operators, however, for most of you, these sections will not effect your learning, so feel free to move forward!
+While the first set of assignment operations are relatively straightforward, you might find difficulty in understanding the latter half of the table. In the next two sections, we'll clarify the significance behind **shift** and **bitwise** operators, however, for most of you, these sections will not affect your learning, so feel free to move forward!
 
 ### Shift Operators
 
