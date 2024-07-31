@@ -17,7 +17,7 @@ This lesson will cover the basics of the primary data types in JavaScript: `Stri
 | Symbol    | Represents a unique and immutable identifier                 | `let sym = Symbol('desc');`  |
 | Object    | Collection of properties and methods                         | `{ name: "Alice", age: 25 }` |
 
-#### Data Type Properties
+## Properties
 
 Data types in JavaScript function in a manner that might appear as counterintuitive. They are considered to be _dynamic_, meaning that a data type is not considered to have a predefined type, this means that a variable containing one type can be altered to contain another.
 
@@ -29,7 +29,7 @@ Data types in JavaScript function in a manner that might appear as counterintuit
 > x = true; // x is a Boolean
 > ```
 
-Another component of data types is that you are able to concatenate data types in an interesting manner. Take, for example, the string `"Hello"` and the number `5`. It's strange that these different data types are able to be _added together_ using the addition [[02---Operators#assignment-operators|arithmetic operator]]. However, this is linked to the idea of [[02---Operators#type-coercion|type coercion]] discussed in a previous lesson. JavaScript will automatically convert one data type to match another in order to perform operations.
+Another component of data types is that you can concatenate them in an interesting manner. Take, for example, the string "Hello" and the number 5. It's strange that these different data types can be added together using the addition [[02---Operators#assignment-operators|arithmetic operator]]. However, this is linked to the idea of [[02---Operators#type-coercion|type coercion]] discussed in a previous lesson. JavaScript will automatically convert one data type to match another in order to perform operations.
 
 > [!example2] Adding a String to a Number
 >
@@ -37,6 +37,18 @@ Another component of data types is that you are able to concatenate data types i
 > result = "Hello" + 5;
 > console.log(result); // Outputs: "Hello5"
 > ```
+
+Seven of the eight types covered in this lesson fall under the term primitive value. A primitive value is immutable, meaning its value cannot be changed once created. This might seem to contradict the dynamic nature of JavaScript data types, but the immutability of primitive types pertains to the actual data stored in the primitive type. Consider the following example where we attempt to alter the **index** of a string (more on indices later).
+
+> [!example] Primitive Values
+>
+> ```javascript
+> let str = "Hello";
+> str[0] = "K"; // Trying to assign the first letter of str to "K"
+> console.log(str); // Outputs: "Hello"
+> ```
+
+Strings are immutable, so converting the "H" into a "K" will fail. When we see an example like two strings being added together, a new value is being created rather than the original data being changed.
 
 ## Strings
 
@@ -58,6 +70,8 @@ You can also use quotes inside a string if you use a different set of quotes to 
 > let quote = "'This is a quotation'";
 > console.log(quote); // Outputs: 'This is a quotation'
 > ```
+
+> **Strings will be explored in greater detail in the upcoming sections.**
 
 ## Numbers
 
@@ -83,5 +97,59 @@ You can also abbreviate larger numbers in JavaScript using scientific notation v
 >
 > ```javascript
 > let number = 100e3;
-> console.log(number); // Output: 100000, equal to  100 x 10^3!
+> console.log(number); // Output: 100000, equal to 100 x 10^3!
 > ```
+
+## BigInt
+
+`BigInt` is a built-in object in JavaScript that allows for numbers larger than the safe integer limit for the `Number` type. `Number` in JavaScript is capable of safely representing numbers between -(2^53 - 1) and (2^53 - 1), hence, numbers outside this range lose precision. To overcome this limitation, JavaScript recently introduced `BigInt` in ECMAScript 2020.
+
+You can create a `BigInt` by appending `n` to the end of an integer, _or_ you can use the `BigInt()` constructor method.
+
+> [!example] BigInt
+>
+> ```javascript
+> let bigInt1 = let bigInt1 = 1234567890123456789012345678901234567890n; // Using the 'n' suffix
+> let bigInt2 = BigInt("1234567890123456789012345678901234567890"); // Using the BigInt constructor
+> ```
+
+`BigInt` is compatible with the common arithmetic operators (`+`, `-`, `*`, etc. See [[02---Operators#assignment-operators|arithmetic operators]] for more), however it does not support mixing with the `Number` type; you must convert them to the same type first. `BigInt` is particularly useful for scientific computations where large numbers are involved.
+
+## Boolean
+
+Booleans represent logical values and can be either `true` or `false`. They are commonly used in conditional statements and loops.
+
+> [!example2] Booleans
+>
+> ```javascript
+> let isJavaScriptFun = true;
+> let isThisLessonComplete = false;
+> console.log(isJavaScriptFun); // true
+> console.log(isThisLessonComplete); // false
+> ```
+
+## Undefined
+
+`Undefined` is a primitive value that represents an uninitialized variable or an expression without a value.
+
+> [!example] Undefined
+>
+> ```javascript
+> let uninitializedVar;
+> console.log(uninitializedVar); // undefined
+> ```
+
+## Null
+
+`Null` is another primitive value that represents the _intentional_ absence of any object value. It typically indicates that a variable should not have a value.
+
+> [!example2] Null
+>
+> ```javascript
+> let noValue = null;
+> console.log(noValue); // null
+> ```
+
+```
+
+```
