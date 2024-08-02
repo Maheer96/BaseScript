@@ -150,6 +150,41 @@ Booleans represent logical values and can be either `true` or `false`. They are 
 > console.log(noValue); // null
 > ```
 
-```
+## Symbol
 
-```
+Symbols are a new primitive data type in JavaScript that allows for the creation of unique and immutable identifiers for object properties. They are created using the `Symbol()` function
+
+> ![example] Symbol
+>
+> ```javascript
+> let symbol1 = Symbol("description");
+> let symbol2 = Symbol("description");
+> console.log(symbol1 === symbol2); // false
+> ```
+
+Interestingly, the two seemingly identical values appear false when equated using the **strictly equal** operator. This is because each symbol is guaranteed uniqueness, regardless of if they have the same description. Symbols are often used as unique keys in objects to avoid property name collisions.
+
+## Objects
+
+Objects in JavaScript are used to store collections of data and more complex entities. An object is a collection of properties, where each property is defined as a **key-value pair**. Properties are the values associated with the object. A property can be a primitive value, another object, or function.
+
+> [!example2] Object
+>
+> ```javascript
+> let person = {
+>    name: "John",
+>    surname: "Doe",
+>    age = 25,
+>    isEmployed = true
+> };
+> ```
+
+In the previous example, each **property key** (i.e. name, surname, etc.) is tied to a **property value** ("John", "Doe", etc.). These values can be accessed outside the object for various use.
+
+> **Objects will be explored in greater detail in the upcoming sections.**
+
+You'll likely find that a select few of these data types appear significantly more than the others. This is particularly true for objects!
+
+Objects encompass not only simple key-value pairs but also more complex structures like **arrays** and **functions**, each of which deserve their own sections in following lessons.
+
+They serve as the foundation for nearly all data structures in JavaScript, providing a flexible and powerful means to organize and manage data. In fact, JavaScript is known as a **prototype-based object-oriented programming language**, different from other classical object-oriented languages like Java or C++. The reason for this definition arises from the nature of objects in the language.
