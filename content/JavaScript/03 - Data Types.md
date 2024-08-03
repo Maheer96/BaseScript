@@ -50,6 +50,17 @@ Seven of the eight types covered in this lesson fall under the term primitive va
 
 Strings are immutable, so converting the "H" into a "K" will fail. When we see an example like two strings being added together, a new value is being created rather than the original data being changed.
 
+#### Checking Data Types
+
+You can check the type of a given variable of expression using the `typeof` operator. This operator returns a string indicated the type of the operand in question. The `typeof` operator can return any of the data types to be discussed in this lesson.
+
+> [!example2] `typeof`
+>
+> ```javascript
+> let x = 5;
+> console.log(typeof x); // number
+> ```
+
 ## Strings
 
 A `String` is a sequence of characters that represents text. Strings are created by enclosing characters in either single quotes (`'`), double quotes, `"`, or backticks (`` ` ``).
