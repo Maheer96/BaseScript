@@ -82,7 +82,7 @@ You can also use quotes inside a string if you use a different set of quotes to 
 > console.log(quote); // Outputs: 'This is a quotation'
 > ```
 
-> **Strings will be explored in greater detail in the upcoming sections.**
+> **For more on strings, see [[04---Strings|Strings]]**
 
 ## Numbers
 
