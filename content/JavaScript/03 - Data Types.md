@@ -192,7 +192,7 @@ Objects in JavaScript are used to store collections of data and more complex ent
 
 In the previous example, each **property key** (i.e. name, surname, etc.) is tied to a **property value** ("John", "Doe", etc.). These values can be accessed outside the object for various use.
 
-> **Objects will be explored in greater detail in the upcoming sections.**
+> **For more on objects, see [[05---Objects|Objects]]**
 
 You'll likely find that a select few of these data types appear significantly more than the others. This is particularly true for objects!
 
