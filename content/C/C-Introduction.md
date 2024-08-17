@@ -1,4 +1,6 @@
-## title: 00 - Introduction
+---
+title: 00 - Introduction
+---
 
 # Introduction to C Programming
 
