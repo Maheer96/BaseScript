@@ -1,5 +1,6 @@
 ---
 title: BaseScript
+enableToc: true
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
