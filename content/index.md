@@ -1,13 +1,13 @@
 ---
 title: BaseScript
-enableToc: true
+enableoc: true
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
 
-<img src="./NiHao.png" width="901" height="183"></img>
+<img src="./NiHao.png"></img>
 
 <p style="font-family: 'Playwrite MX';">Hello!</p>
 
