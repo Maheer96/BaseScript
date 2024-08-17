@@ -19,6 +19,7 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.TagList()],
   left: [
     Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
     Component.Graph(),
     // Component.Darkmode(),
     Component.DesktopOnly(
