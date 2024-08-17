@@ -43,15 +43,6 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Graph(),
     // Component.Darkmode(),
-    Component.DesktopOnly(
-      Component.Explorer({
-        title: "Learn Today!",
-      }),
-    ),
   ],
-  right: [
-    Component.Search(),
-    Component.Backlinks(),
-    Component.DesktopOnly(Component.TableOfContents()),
-  ],
+  right: [Component.Search(), Component.Backlinks()],
 };
