@@ -20,13 +20,24 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Graph(),
+    Component.DesktopOnly(Component.Graph()),
     // Component.Darkmode(),
-    Component.Explorer({
-      title: "Learn Today!",
-    }),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "Learn Today!",
+      }),
+    ),
   ],
-  right: [Component.Search(), Component.Backlinks(), Component.TableOfContents()],
+  right: [
+    Component.Search(),
+    Component.Backlinks(),
+    Component.TableOfContents(),
+    Component.MobileOnly(
+      Component.Explorer({
+        title: "Learn Today!",
+      }),
+    ),
+  ],
 };
 
 // components for pages that display lists of pages  (e.g. tags or folders)
