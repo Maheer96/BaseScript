@@ -6,7 +6,7 @@ Objects are so vital to JavaScript because they provide a way to group data and 
 
 ## Creating an Object
 
-The most common ways to create objects are to use object literals, or by using the `new` keyword, much like how strings can be made.
+The most common way to create objects is to use object literals, or much like strings, you can use the `new` keyword.
 
 ### Object Literals
 
