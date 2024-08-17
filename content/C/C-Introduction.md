@@ -2,8 +2,6 @@
 title: 00 - Introduction
 ---
 
-# Introduction to C Programming
-
 ## Overview
 
 Welcome to the world of C programming! C is one of the oldest and most influential programming languages, serving as the foundation for many modern languages such as C++, Java, and Python. C is a low-level programming language, which doesn't mean it is weak; in fact, it is quite powerful. The term "low-level" refers to its close interaction with the computer's hardware, allowing you to manage memory and system resources directly. This makes C incredibly fast and efficient, ideal for developing operating systems, embedded systems, and other performance-critical applications.
