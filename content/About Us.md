@@ -1,7 +1,5 @@
 ---
-title: About
-enableToc: false
-enableContentMeta: false
+title: About Us
 ---
 
 ## Hello 👋🏽 — thank you for stopping by!

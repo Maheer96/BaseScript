@@ -41,3 +41,9 @@ This example contains an object `person` with properties: `name`, `age`, and `oc
 > ```
 >
 > For more on the difference between the variable-defining keywords, see [[01---Basics#var-let--const|Var, Let, & Const]]
+
+Object literals are easy and efficient to write, and are best to use when making single objects.
+
+### `new` and Constructor Functions
+
+Constructor functions are used to create multiple instances of objects with similar structures using the `new` keyword.
