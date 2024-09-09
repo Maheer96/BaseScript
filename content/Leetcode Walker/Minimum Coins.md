@@ -36,14 +36,14 @@ That being said, we now know it is necessary to track the minimum number of coin
 
 The beginning to our solution lies in creating a list of length `amount + 1`, given how lists work in Python. We're going to initialize the list to infinity, `float('inf')`, since we assume it is impossible to make that amount with the given coins. Each index `i` in this list will contain the minimum number of coins required to make that amount `i`.
 
-Our base case would be the value of zero, given that no coins would be needed to make zero, we can simply set our first index to zero. We can write down our given array of coins, being `[1, 3, 5]`.
+Our base case would be the value of zero, given that no coins would be needed to make zero we can simply set our first index to zero. We can also write down our given array of coins, being `[1, 3, 5]`.
 
 Here is our code so far:
 
 ```python
 def coinChange(amount):
     # Init. min_coins list to track minimum no. coins needed for each amount from 0 to total
-    min_coins = [float('inf)] * (amount + 1)
+    min_coins = [float('inf')] * (amount + 1)
 
     # Base case: zero coins needed for zero amount
     min_coins[0] = 0
@@ -52,6 +52,25 @@ def coinChange(amount):
     coins = [1, 3, 5]
 ```
 
+The difficulty of the problem lies in the following algorithm. We're going to utilize dynamic programming to carry out the plan we made in the previous section. Recall that our idea is to build the solution for all amounts from 1 up to the `amount`, step by step, using information we gained about preceding numbers.
+
+Suppose we want to make the amount of `5`. If we know how to make `4`, then using our `1` denomination, we know how to make 5. Similarly, if we want to amount `11`, and we know how to make `10`, we simply add one more to the minimum number of coins needed to make `10`!
+
+Given that this is an **incremental problem**, it should be clear that we should be using a `for` loop. Since we are starting from smaller subproblems and building up, a `for` loop will allow us to start from 1, and work up to `amount`:
+
+```python
+for i in range(1, amount + 1)
 ```
+
+Inside this loop, we ask, can I use one of these coins to make the amount at our index, `i`? Hence, we once again use a `for` loop, instead this time we are looping through our list of coins.
+
+```python
+for i in range(1, amount + 1):
+  for coin in coins:
+```
+
 writer: maheer :0
+
+```
+
 ```
