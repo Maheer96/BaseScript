@@ -30,13 +30,13 @@ In this case, our minimum coins problem lies under the idea of **optimal substru
 - For instance, to determine the number of coins needed for an amount `x`, you consider the minimum coins needed for `x - coin`, for each coin available.
   - This is because, for each coin, if we do use it, we need to find out how many more coins are required to make up the remaining `x - coin` amount
 
-That being said, we now know it is necessary to track the minimum number of coins needed for each amount from 0 to `amount`. This finally leads us toward our solution
+That being said, we now know it is necessary to track the minimum number of coins needed for each amount from 0 to `amount`. This finally leads us toward our solution.
 
 ### Solution
 
 The beginning to our solution lies in creating a list of length `amount + 1`, given how lists work in Python. We're going to initialize the list to infinity, `float('inf')`, since we assume it is impossible to make that amount with the given coins. Each index `i` in this list will contain the minimum number of coins required to make that amount `i`.
 
-Our base case would be the value of zero, given that no coins would be needed to make zero we can simply set our first index to zero. We can also write down our given array of coins, being `[1, 3, 5]`.
+Our base case would be the value of zero. Given that no coins would be needed to make zero we can simply set our first index to `0`. We can also write down our given array of coins, being `[1, 3, 5]`.
 
 Here is our code so far:
 
@@ -65,12 +65,28 @@ for i in range(1, amount + 1)
 Inside this loop, we ask, can I use one of these coins to make the amount at our index, `i`? Hence, we once again use a `for` loop, instead this time we are looping through our list of coins.
 
 ```python
-for i in range(1, amount + 1):
   for coin in coins:
 ```
 
-writer: maheer :0
+We now want to check if the index we are at can be fulfilled by one of our coins. We also want to make sure we don't deal with negatives, so we impose a _greater than or equal to_ operator in the following statement.
 
+```python
+    if i - coin >= 0:
 ```
 
+Here we are checking if the index subtracted by one of the coins from our list is positive, and if it is, we can use the coin. Take a look at this example for further clarification:
+
+> [!example2] Example
+> Say we wanted to make an amount of our index when `i = 3`. Our list of coins is `[1, 3, 5]`.
+>
+> - For the first coin, `i - coin = 3 - 1 = 2`, and since 2 >= 0, we **can** use the `1` coin
+> - For the second coin, `i - coin = 3 - 3 = 0`, which we cYan also use
+> - For the third coin, `i - coin = 3 - 5 = -2`, which we **cannot** use, since it is too large to make up the number `3`.
+
+Since we are using `i - coin >= 0`, we guarantee, that regardless of the coin value, we have a filter for the coins we can use (which is why we set each array entry to a primitive value of infinity).
+
+Given that we've filtered the coins we can use to make up `i`, we now need to replace the entry of that array with the minimum number of coins needed to make `i`. Before execution, every entry is set to infinity, so if we compare the current
+
+```
+writer: maheer
 ```
