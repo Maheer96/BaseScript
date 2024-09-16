@@ -5,7 +5,7 @@ tags: Medium
 
 ## Problem
 
-Coin Change is **medium** level problem #332 on Leetcode, for the full description, see [here](https://leetcode.com/problems/coin-change/description/). In Coin Change, you are given an integer array `coins` of _different_ numbers, and an integer `amount` representing a total amount of money.
+Coin Change is a **medium** level problem #332 on Leetcode, for the full description, see [here](https://leetcode.com/problems/coin-change/description/). In Coin Change, you are given an integer array `coins` of _different_ numbers, and an integer `amount` representing a total amount of money.
 
 The objective is to return the **fewest number of coins that you need to make up the amount**. If the amount cannot be made up by the combination, return `-1`.
 
