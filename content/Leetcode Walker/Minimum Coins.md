@@ -1,5 +1,6 @@
 ---
 title: Coin Change
+tags: Medium
 ---
 
 ## Problem

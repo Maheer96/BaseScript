@@ -10,6 +10,8 @@ The Leetcode Walker Series are a set of tutorials in both video and text format 
 
 LeetCode classifies problems into three difficulty levels: **Easy**, **Medium**, and **Hard**. Easy problems are suitable for beginners, focusing on basic concepts and simple tasks. Medium problems require more advanced problem-solving and understanding of algorithms and data structures. Hard problems involve complex logic and optimization challenges, often requiring a deep grasp of advanced techniques. These levels help users progressively build their skills from fundamental to sophisticated problem-solving.
 
+LeetCode problems can also be categorized into key computer science topics such as Arrays, Strings, Dynamic Programming, Trees, and Graphs . These topics represent the fundamental building blocks of algorithms and data structures, each focusing on specific problem-solving techniques. Arrays and Strings typically involve operations on collections of data, while Dynamic Programming focuses on optimizing problems by breaking them into simpler subproblems. Trees and Graphs explore hierarchical and networked data structures, often used in more complex and abstract scenarios.
+
 ## Format
 
 This series will feature the use of different languages to solve problems. Leetcode can be solved using programming language, typically done using the programmer's language of choice. For this reason, there may be no consistent theme as to which language will be primarily used throughout this series.
