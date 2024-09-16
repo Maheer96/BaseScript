@@ -49,7 +49,7 @@ class Solution(object):
     def containsDuplicate(self, nums):
 ```
 
-Underneath the `containsDuplicate` function is where we write our solution. Our first step is to create an empty set using the set constructor that we will name `hashset`.
+Underneath the `containsDuplicate` function is where we write our solution (to the HashSet approach). Our first step is to create an empty set using the set constructor that we will name `hashset`.
 
 ```python
 hashset = set()
@@ -82,7 +82,51 @@ class Solution:
 
 ```
 
-To conclude, the Contains Duplicate problem demonstrates the importance of understanding time and space trade-offs when solving algorithmic challenges. While brute force approaches can solve the problem, they often come with inefficient time complexity. By leveraging data structures like HashSets, we can significantly optimize our solutions, making them both faster and cleaner. This problem is a great example of how thinking about the right tool for the job—in this case, sets—can lead to better, more scalable solutions in coding.
+### Bonus
+
+As an exercise (for myself), I'm also going to be going over the sorting solution mentioned [[Leetcode-Walker/Arrays--and--Hashing/Contains-Duplicate#sorting|above]]. This solution is also simple in Python, taking advantage of the `.sort()` method. This solution checks if the current integer is equal to the _next_ value in the list.
+
+The first step is to sort the list.
+
+```python
+nums.sort()
+```
+
+Instead of iterating through each integer in `nums`, like we did for the previous solution, we instead want to iterate through the indices themselves. Since we are looking to compare each value to the next one, we want to be careful of an index error. For this reason, we will be indexing from `0` to `len(nums) - 1`, which goes ends at the second last item of the list (exclusive property of `range`).
+
+We don't want the last value of the list to be compared to the "next" as that does not exist, so we end at the penultimate entry.
+
+<div style="text-align:center;">
+    <img src="sorting.png">
+</div>
+
+Knowing this, our next lines of code are as following:
+
+```python
+for i in range(len(nums) - 1):
+    if nums[i] == nums[i + 1]:
+        return True
+
+return False
+```
+
+Bringing it together, the sorting algorithm solution to this Leetcode problem is:
+
+```python
+class Solution(object):
+    def containsDuplicate(self, nums):
+        nums.sort()
+
+        for i in range(len(nums) - 1):
+            if nums[i] == nums[i + 1]:
+                return True
+
+return False
+```
+
+### Conclusion
+
+The Contains Duplicate problem demonstrates the importance of understanding time and space trade-offs when solving algorithmic challenges. While brute force approaches can solve the problem, they often come with inefficient time complexity. By leveraging data structures like HashSets, we can significantly optimize our solutions, making them both faster and cleaner. This problem is a great example of how thinking about the right tool for the job—in this case, sets—can lead to better, more scalable solutions in coding.
 
 ```
 writer: maheer :o
