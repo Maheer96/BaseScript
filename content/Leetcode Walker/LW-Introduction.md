@@ -2,7 +2,7 @@
 title: 00 - Introduction
 ---
 
-The Leetcode Walker Series are a set of tutorials in both video and text format founded by BaseScript's manager, Shadi El-Fares. See his [Youtube channel](https://www.youtube.com/@shadielfares/featured) for videos of his own. Contributions to this series found on this website are developed by various developers at BaseScript.
+The Leetcode Walker Series are a set of tutorials in both video and text format founded by BaseScript's manager, Shadi El-Fares. See his [Youtube channel](https://www.youtube.com/@shadielfares/featured) for videos of his own. Contributions to this series found on this website are created by various developers at BaseScript.
 
 ## What is Leetcode?
 
@@ -14,4 +14,4 @@ LeetCode classifies problems into three difficulty levels: **Easy**, **Medium**,
 
 This series will feature the use of different languages to solve problems. Leetcode can be solved using programming language, typically done using the programmer's language of choice. For this reason, there may be no consistent theme as to which language will be primarily used throughout this series.
 
-The motivation behind the lessons vary for each developer, as this is a series meant to allow for our students to have freedom in the lessons they create. You may be lucky enough to find the Leetcode you were last struggling on... :)
+The main purpose of this section is to tackle the Leetcode **Blind 75**, a curated list of 75 Leetcode problems that are commonly asked in technical interviews. The list is widely regarded as one of the best problem sets to prepare for coding interviews, as it covers a broad range of topics that interviewers often test. For more on the Blind 75, see [here](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions).

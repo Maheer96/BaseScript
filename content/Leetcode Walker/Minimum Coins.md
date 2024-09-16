@@ -10,9 +10,9 @@ The objective is to return the **fewest number of coins that you need to make up
 
 > [!example] Example
 >
-> Input: `coins = [1, 2, 5]`, `amount = 11` \
-> Output: 3 \
-> Explanation: 11 = 5 + 5 + 1
+> **Input**: `coins = [1, 2, 5]`, `amount = 11` \
+> **Output**: 3 \
+> **Explanation**: 11 = 5 + 5 + 1
 
 ## A Simplified Prelude
 
@@ -52,7 +52,7 @@ def coinChange(amount):
     coins = [1, 3, 5]
 ```
 
-The difficulty of the problem lies in the following algorithm. We're going to utilize dynamic programming to carry out the plan we made in the previous section. Recall that our idea is to build the solution for all amounts from 1 up to the `amount`, step by step, using information we gained about preceding numbers.
+The difficulty of the problem lies in the following algorithm. We're going to use dynamic programming to carry out the plan we made in the previous section. Recall that our idea is to build the solution for all amounts from 1 up to the `amount`, step by step, using information we gained about preceding numbers.
 
 Suppose we want to make the amount of `5`. If we know how to make `4`, then using our `1` denomination, we know how to make 5. Similarly, if we want to amount `11`, and we know how to make `10`, we simply add one more to the minimum number of coins needed to make `10`!
 
@@ -62,7 +62,7 @@ Given that this is an **incremental problem**, it should be clear that we should
 for i in range(1, amount + 1)
 ```
 
-Inside this loop, we ask, can I use one of these coins to make the amount at our index, `i`? Hence, we once again use a `for` loop, instead this time we are looping through our list of coins.
+Inside this loop, we ask, can we use one of these coins to make the amount at our index, `i`? Hence, we once again use a `for` loop, instead this time we are looping through our list of coins.
 
 ```python
   for coin in coins:
@@ -80,7 +80,7 @@ Here we are checking if the index subtracted by one of the coins from our list i
 > Say we wanted to make an amount of our index when `i = 3`. Our list of coins is `[1, 3, 5]`.
 >
 > - For the first coin, `i - coin = 3 - 1 = 2`, and since 2 >= 0, we **can** use the `1` coin
-> - For the second coin, `i - coin = 3 - 3 = 0`, which we cYan also use
+> - For the second coin, `i - coin = 3 - 3 = 0`, which we can also use
 > - For the third coin, `i - coin = 3 - 5 = -2`, which we **cannot** use, since it is too large to make up the number `3`.
 
 Since we are using `i - coin >= 0`, we guarantee, that regardless of the coin value, we have a filter for the coins we can use (which is why we set each array entry to a primitive value of infinity).
