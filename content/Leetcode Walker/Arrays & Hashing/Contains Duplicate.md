@@ -130,5 +130,4 @@ The Contains Duplicate problem demonstrates the importance of understanding time
 
 ```
 writer: maheer :o
-inspo: neetcode.io
 ```
