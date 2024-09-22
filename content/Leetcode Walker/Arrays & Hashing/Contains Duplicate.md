@@ -1,6 +1,6 @@
 ---
 title: Contains Duplicate
-tags: Easy
+tags: Easy, Blind 75
 ---
 
 ## Problem
