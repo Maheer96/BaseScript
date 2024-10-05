@@ -165,7 +165,7 @@ Booleans represent logical values and can be either `true` or `false`. They are 
 
 Symbols are a new primitive data type in JavaScript that allows for the creation of unique and immutable identifiers for object properties. They are created using the `Symbol()` function
 
-> ![example] Symbol
+> [!example] Symbol
 >
 > ```javascript
 > let symbol1 = Symbol("description");
