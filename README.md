@@ -78,7 +78,7 @@ Note: The Blind 75 tends to vary from person-to-person, hence I will be followin
 ```
 Arrays & Hashing
 - Contains Duplicate ✅
-- Valid Anagram ⭕
+- Valid Anagram 🔄
 - Two Sum ⭕
 - Group Anagrams ⭕
 - Top K Frequent Elements ⭕
