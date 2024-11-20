@@ -187,6 +187,11 @@ Bit Manipulation
 - Missing Number ⭕  
 - Sum of Two Integers ⭕  
 ```
+In summary,
+
+| Developer(s) | Current Phase | Total Progress |
+---------------|---------------|----------------|
+Maheer Huq   | Valid Anagram|  ▒▒▒▒▒▒▒▒▒▒ ~2%|
 
 ### Future Add-Ons
 
