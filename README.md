@@ -67,6 +67,7 @@ This will update your forked repository, where you can now submit a pull request
 Happy learning!
 
 <hr>
+
 # Project Roadmap 📜
 
 Given that our environments as students are always changing in regard to the technologies we are surrounded by, this roadmap only provides a loose skeletal layout of what we may bring to the table. Nonetheless, BaseScript is currently focused on three major sub-projects, with more to come. 
