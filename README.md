@@ -280,6 +280,10 @@ Maheer Huq   | Valid Anagram|  ▒▒▒▒▒▒▒▒▒▒ ~2%|
 
 As discussed this likely will not conclude the Leetcode Walker series (if ever finished :p), since you can always continue learning. This also does not mean we will be strictly following these 75 problems. If we ever encounter a problem outside of this list, we may simply create a lesson on it and place it outside of the Blind 75 folder (uncreated).
 
+Currently, I am looking to:
+* Create a general Data Structures file directly under the LW directory. A lot of the lessons will require knowledge on simpler concepts of programming that I won't be explaining in each lesson, hence, a curated lesson dedicated would work well with backlinks
+* Organize the LW series into proper folders
+
 ## Future Sub-Projects
 
 Our developers are all over the place in their degrees and learning careers, and there's no telling what we will be providing BaseScript with next. A few things that we may expect to see given our trajectories are: 
