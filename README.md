@@ -14,6 +14,59 @@ I ended up choosing JavaScript, the world's most used programming language. The 
 
 <hr>
 
+# Contributions
+
+If you'd like to become a long-term contributor to BaseScript, feel free to reach out and we can speak on collaborative permissions. For starters, fork this repository and clone it onto your local machine. Follow these next instructions:
+
+1) Install Node and npm
+
+**Windows & Mac: **
+
+Follow the instructions on [the official node website](https://nodejs.org/en).
+
+Verify:
+```
+node -v
+npm -v
+```
+**Linux: **
+
+Add NodeSource repository:
+```
+curl -fsSL https://deb.nodesource.com/setup_22.11.0.x | sudo -E bash -
+```
+
+Then, install Node.js and npm:
+```
+sudo apt-get install -y nodejs
+```
+
+Verify:
+```
+node -v
+npm -v
+```
+
+2) Locally Hosting
+
+To run a localhost, run the following command in your terminal:
+
+```
+npx quartz build --serve
+```
+This will launch a local server where you can see your changes take immediate effect. Note that any core changes that may require several layers of rebuilding will take considerable time. 
+
+3) Pushing to Repo
+
+If you wish to deploy the changes to your repo, run the following command:
+```
+npx quartz sync
+```
+This will update your forked repository, where you can now submit a pull request for us to review. Again, if you'd like easier push access, feel free to reach out to discuss permissions. 
+
+Happy learning!
+
+<hr>
 # Project Roadmap 📜
 
 Given that our environments as students are always changing in regard to the technologies we are surrounded by, this roadmap only provides a loose skeletal layout of what we may bring to the table. Nonetheless, BaseScript is currently focused on three major sub-projects, with more to come. 
