@@ -18,16 +18,27 @@ I ended up choosing JavaScript, the world's most used programming language. The 
 
 If you'd like to become a long-term contributor to BaseScript, feel free to reach out and we can speak on collaborative permissions. For starters, fork this repository and clone it onto your local machine. Follow these next instructions:
 
-1) Install Node and npm
+1) Install dependencies
+
+To successfully get BaseScript running on your machine, you'll need the following packages/dependencies:
+
+* `Node/npm`
+* `yargs`
 
 **Windows & Mac:**
 
 Follow the instructions on [the official node website](https://nodejs.org/en).
 
+Install `yargs`:
+```
+npm install yargs
+```
+
 Verify:
 ```
 node -v
 npm -v
+npm list yargs // Check if anything shows up
 ```
 
 **Linux:**
@@ -37,15 +48,17 @@ Add NodeSource repository:
 curl -fsSL https://deb.nodesource.com/setup_22.11.0.x | sudo -E bash -
 ```
 
-Then, install Node.js and npm:
+Then, install Node.js, npm, and yargs
 ```
 sudo apt-get install -y nodejs
+npm install yargs
 ```
 
 Verify:
 ```
 node -v
 npm -v
+npm list yargs
 ```
 
 2) Locally Hosting
