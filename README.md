@@ -20,7 +20,7 @@ If you'd like to become a long-term contributor to BaseScript, feel free to reac
 
 1) Install Node and npm
 
-**Windows & Mac: **
+**Windows & Mac:**
 
 Follow the instructions on [the official node website](https://nodejs.org/en).
 
@@ -29,7 +29,7 @@ Verify:
 node -v
 npm -v
 ```
-**Linux: **
+**Linux:**
 
 Add NodeSource repository:
 ```
