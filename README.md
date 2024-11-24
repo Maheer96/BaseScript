@@ -29,6 +29,7 @@ Verify:
 node -v
 npm -v
 ```
+
 **Linux:**
 
 Add NodeSource repository:
@@ -55,6 +56,21 @@ To run a localhost, run the following command in your terminal:
 npx quartz build --serve
 ```
 This will launch a local server where you can see your changes take immediate effect. Note that any core changes that may require several layers of rebuilding will take considerable time. 
+
+If you run into the following error when doing any form of npm/node commands in your VS Code terminal:
+```
+npm : File C:\<location> cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+```
+Your Windows Powershell is likely set to Restricted or RemoteSigned, blocking the script. To fix this, run the following command:
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Verify:
+```
+node -v
+npm -v
+```
 
 3) Pushing to Repo
 
