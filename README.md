@@ -139,7 +139,21 @@ In addition to what is already going to be taught in these lessons, I was thinki
 
 ## Sub-Project 2 — C
 
-The C directory on BaseScript is currently being led by Akash Ahilan, with developments in it's early stages. The format for the lessons are yet to be explicitly formatted, however, one can expect it to follow a similar format to that of my JavaScript lesson layout, given that a language should only be learned in so many ways. 
+The C directory on BaseScript is currently being led by Akash Ahilan, with developments in its early stages. The format for the lessons can be seen as follow:
+
+✅ — **Completed** <br>
+🔄 — **In The Works/On Hold** <br>
+⭕ — **Incomplete**
+
+```
+1. C History ✅
+2. Understanding C ⭕
+3. Hello World ⭕
+4. Integer Data Types ⭕ 
+5. Statements ⭕
+6. Arrays ⭕
+7. Pointers ⭕
+```
 
 | Developer(s) | Current Phase | Total Progress |
 ---------------|---------------|----------------|
